@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "aa4f89e8-3a9a-43df-9c45-cdb0ec22918c": {
+      "ProjectGuid": "aa4f89e8-3a9a-43df-9c45-cdb0ec22918c",
+      "DisplayName": "WebAppApi_quiz",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

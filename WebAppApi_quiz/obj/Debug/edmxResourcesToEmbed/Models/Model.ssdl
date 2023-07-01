@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuizModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="participant_tb">
+    <Key>
+      <PropertyRef Name="participantId" />
+    </Key>
+    <Property Name="participantId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Score" Type="int" />
+    <Property Name="TimeSpent" Type="int" />
+  </EntityType>
+  <EntityType Name="Questions_tb">
+    <Key>
+      <PropertyRef Name="QsId" />
+    </Key>
+    <Property Name="QsId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Qs" Type="varchar" MaxLength="250" />
+    <Property Name="ImageName" Type="varchar" MaxLength="50" />
+    <Property Name="Option1" Type="varchar" MaxLength="50" />
+    <Property Name="Option2" Type="varchar" MaxLength="50" />
+    <Property Name="Option3" Type="varchar" MaxLength="50" />
+    <Property Name="Option4" Type="varchar" MaxLength="50" />
+    <Property Name="Answer" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="QuizModelStoreContainer">
+    <EntitySet Name="participant_tb" EntityType="Self.participant_tb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Questions_tb" EntityType="Self.Questions_tb" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QuizModelStoreContainer" CdmEntityContainer="QuizEntitiesDb">
+    <EntitySetMapping Name="participant_tb">
+      <EntityTypeMapping TypeName="QuizModel.participant_tb">
+        <MappingFragment StoreEntitySet="participant_tb">
+          <ScalarProperty Name="participantId" ColumnName="participantId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+          <ScalarProperty Name="TimeSpent" ColumnName="TimeSpent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Questions_tb">
+      <EntityTypeMapping TypeName="QuizModel.Questions_tb">
+        <MappingFragment StoreEntitySet="Questions_tb">
+          <ScalarProperty Name="QsId" ColumnName="QsId" />
+          <ScalarProperty Name="Qs" ColumnName="Qs" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="Option1" ColumnName="Option1" />
+          <ScalarProperty Name="Option2" ColumnName="Option2" />
+          <ScalarProperty Name="Option3" ColumnName="Option3" />
+          <ScalarProperty Name="Option4" ColumnName="Option4" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
